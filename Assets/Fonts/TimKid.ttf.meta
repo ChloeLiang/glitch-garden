@@ -1,6 +1,7 @@
 fileFormatVersion: 2
-guid: 9a9a7bdde5c74434393a5b2846497384
-timeCreated: 18446744011573954816
+guid: 33799f34c09a44d4a9b5cf2fc8885ae8
+timeCreated: 1513172206
+licenseType: Free
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,8 +10,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: 
-  fontNames: []
+  fontName: TimKid
+  fontNames:
+  - TimKid
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
