@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour {
 
-	[Range(-1f, 1.5f)]
-	public float currentSpeed;
+	private float currentSpeed;
+	private GameObject currentTarget;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +26,12 @@ public class Attacker : MonoBehaviour {
 		currentSpeed = speed;
 	}
 
+	// Called from the animator at the time of actual blow
 	public void StrikeCurrentTarget (float damage) {
 		Debug.Log(name + " caused damage: " + damage);
+	}
+
+	public void Attack (GameObject obj) {
+		currentTarget = obj;
 	}
 }
