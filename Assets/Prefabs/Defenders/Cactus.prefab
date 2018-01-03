@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61218134504191182}
   - component: {fileID: 114773645713803002}
   - component: {fileID: 114898273279516438}
+  - component: {fileID: 114405280338259236}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -41,6 +42,21 @@ GameObject:
   - component: {fileID: 212578740662530046}
   m_Layer: 0
   m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1583144774312716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4450078826907496}
+  m_Layer: 0
+  m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,8 +86,22 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 4273930961516028}
+  - {fileID: 4450078826907496}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4450078826907496
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1583144774312716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.249, y: 0.04, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4431549723661114}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &61218134504191182
 BoxCollider2D:
@@ -115,6 +145,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114405280338259236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060208815765972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eafb1f6cc2147e1a08dc7862ce4947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1436270965579046, guid: 3f197670564864fccbd42ea0f2edd02c, type: 2}
+  projectileParent: {fileID: 1949030479378850, guid: 156dd8e2f78f440b4b983e42c1a12d1b,
+    type: 2}
+  gun: {fileID: 1583144774312716}
 --- !u!114 &114773645713803002
 MonoBehaviour:
   m_ObjectHideFlags: 1

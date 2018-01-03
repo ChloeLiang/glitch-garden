@@ -11,6 +11,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1696022546457190}
   m_IsPrefabParent: 1
+--- !u!1 &1087348537232104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4255080655695404}
+  m_Layer: 0
+  m_Name: Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1412109229817842
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,6 +54,7 @@ GameObject:
   - component: {fileID: 61584558127309872}
   - component: {fileID: 114582849605640142}
   - component: {fileID: 114977572673920436}
+  - component: {fileID: 114542778802275792}
   m_Layer: 0
   m_Name: Gnome
   m_TagString: Untagged
@@ -57,8 +73,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4520576634266042}
+  - {fileID: 4255080655695404}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4255080655695404
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087348537232104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.174, y: -0.234, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4175162819710872}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4520576634266042
 Transform:
@@ -115,6 +145,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114542778802275792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1696022546457190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05eafb1f6cc2147e1a08dc7862ce4947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1291492681699170, guid: 6ad14efd69da94db3b327b624efaaeec, type: 2}
+  projectileParent: {fileID: 1949030479378850, guid: 156dd8e2f78f440b4b983e42c1a12d1b,
+    type: 2}
+  gun: {fileID: 1087348537232104}
 --- !u!114 &114582849605640142
 MonoBehaviour:
   m_ObjectHideFlags: 1
